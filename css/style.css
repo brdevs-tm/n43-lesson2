@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+a {
+  text-decoration: none;
+}
+button {
+  border: none;
+}
+li {
+  list-style: none;
+}
+input {
+  outline: none;
+  background: transparent;
+  transition: all 0.5s;
+}
+
+input:focus {
+  /* background: #000 */
+  border: 1px solid #2b6cb0 !important;
+}
+
+.container {
+  width: 400px;
+  max-width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.main-left {
+  width: 50%;
+  height: 100%;
+  background-image: url("../assets/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-right {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+
+form p {
+  color: var(--800, #2d3748);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 2px;
+}
+
+form h1 {
+  color: var(--900, #1a202c);
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 24px;
+}
+
+.inputs {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 11px;
+  margin-bottom: 28px;
+}
+
+.mail-row,
+.password-row {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  > label {
+    color: var(--700, #4a5568);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  > input {
+    width: 100%;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #e8e8e8;
+    color: var(--800, #2d3748);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+
+.remember-forgotpass {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 27px;
+}
+
+.remember {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  > label {
+    color: var(--800, #2d3748);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+
+.forgot-pass {
+  color: var(--800, #2c5282);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.buttons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  > button {
+    width: 100%;
+    padding: 15px;
+    color: #fff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-radius: 5px;
+    transition: all 0.5s;
+  }
+}
+
+.login-user {
+  background: #04c35c;
+  border: 1px solid #04c35c;
+}
+
+.login-user:hover {
+  color: #04c35c;
+  background: #fff;
+}
+
+.by-google {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+  background: var(--800, #2d3748);
+  border: 1px solid #2d3748;
+}
+
+.by-google:hover {
+  color: #2d3748;
+  background: #fff;
+}
+
+.register {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 160px;
+}
+
+.register span {
+  color: #616161;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.register a {
+  color: var(--700, #2b6cb0);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+@media (max-width: 850px) {
+  .main-left {
+    display: none;
+  }
+  .main-right {
+    width: 100%;
+    height: 100%;
+    background: url("../assets/bg.png");
+  }
+  .container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+}
